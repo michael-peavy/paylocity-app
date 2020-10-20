@@ -1,55 +1,58 @@
 import React from "react";
-import "./Header.css";
-import Feed from "./Feed";
 import BottomHeader from "./BottomHeader";
 import "./App.css";
 import Header from "./Header.js";
-import Sidebar from "./Sidebar";
-import Widget from "./Widget";
 import Login from "./Login.js";
-import clock from "./clock/clock";
+import clock from "./Clock/Clock";
 import HomeView from "./HomeView";
-import Contact from './messeges/Contact'
-import { auth, provider } from "./firebase";
+import Contact from "./Messeges/Contact";
+import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import { actionTypes } from "./reducer";
-import Messeges from './messeges/Messeges'
+import Messeges from "./Messeges/Messeges";
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  withRouter,
   Redirect,
 } from "react-router-dom";
 
 function App() {
-   const [{ user }, dispatch] = useStateValue();
+  const [{ user }, dispatch] = useStateValue();
+
+  React.useEffect(() => {
+    auth.onAuthStateChanged((currentUser) => {
+      dispatch({
+        type: actionTypes.SET_USER,
+        user: currentUser || false,
+      });
+    });
+  }, [dispatch]);
 
   return (
     <div className="app">
-      <ActiveUserContext.Provider>
-        <Router>
-          {!auth.currentUser ? (
-            <Login />
-          ) : (
-            <>
-              <Header />
-              <BottomHeader />
-
-              <span className="app__body">
-                <Switch>
-                  <Route exact={true} path="/" component={HomeView} />
-                  <Route exact={true} path="/clock" component={clock} />
-                  <Route exact={true} path="/contact" component={Contact} />
-                  <Route exact={true} path="/messeges" component={Messeges} />
-                  <Redirect to="/" />
-                </Switch>
-              </span>
-            </>
-          )}
-        </Router>
-      </ActiveUserContext.Provider>
+      <Router>
+        {user === false ? (
+          <Login />
+        ) : user ? (
+          <>
+            <Header />
+            <BottomHeader />
+            <span className="app__body">
+              <Switch>
+                <Route exact={true} path="/" component={HomeView} />
+                <Route path="/clock" component={clock} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/messeges" component={Messeges} />
+                <Redirect to="/" />
+              </Switch>
+            </span>
+          </>
+        ) : (
+          <></>
+        )}
+      </Router>
     </div>
   );
 }
