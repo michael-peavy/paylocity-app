@@ -1,24 +1,55 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./Header.css";
+import Feed from "./Feed";
+import BottomHeader from "./BottomHeader";
+import "./App.css";
+import Header from "./Header.js";
+import Sidebar from "./Sidebar";
+import Widget from "./Widget";
+import Login from "./Login.js";
+import clock from "./clock/clock";
+import HomeView from "./HomeView";
+import Contact from './messeges/Contact'
+import { auth, provider } from "./firebase";
+import { useStateValue } from "./StateProvider";
+import { actionTypes } from "./reducer";
+import Messeges from './messeges/Messeges'
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  withRouter,
+  Redirect,
+} from "react-router-dom";
 
 function App() {
+   const [{ user }, dispatch] = useStateValue();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <ActiveUserContext.Provider>
+        <Router>
+          {!auth.currentUser ? (
+            <Login />
+          ) : (
+            <>
+              <Header />
+              <BottomHeader />
+
+              <span className="app__body">
+                <Switch>
+                  <Route exact={true} path="/" component={HomeView} />
+                  <Route exact={true} path="/clock" component={clock} />
+                  <Route exact={true} path="/contact" component={Contact} />
+                  <Route exact={true} path="/messeges" component={Messeges} />
+                  <Redirect to="/" />
+                </Switch>
+              </span>
+            </>
+          )}
+        </Router>
+      </ActiveUserContext.Provider>
     </div>
   );
 }

@@ -1,0 +1,228 @@
+{
+  "users": [
+    {
+      "firstName": "Lenna",
+      "lastName": "Flatley",
+      "company": "Runolfsson PLC",
+      "status": "active",
+      "activeEntry": "OjkhCZP",
+      "id": "19b83e7"
+    },
+    {
+      "firstName": "Alf",
+      "lastName": "Brown",
+      "company": "White and Sons",
+      "status": "away",
+      "activeEntry": null,
+      "id": "c8b641f"
+    },
+    {
+      "firstName": "Emmitt",
+      "lastName": "Upton",
+      "company": "Baumbach LLC",
+      "status": "active",
+      "activeEntry": "fI-y8pM",
+      "id": "64097a"
+    },
+    {
+      "firstName": "Sheldon",
+      "lastName": "Moore",
+      "company": "Senger LLC",
+      "id": "6a41e74",
+      "status": "offline"
+    },
+    {
+      "firstName": "Braxton",
+      "lastName": "Brekke",
+      "company": "Wolf and Sons",
+      "id": "a790938",
+      "status": "offline"
+    }
+  ],
+  "time-entries": [
+    {
+      "id": "8d9e5c8",
+      "userId": "19b83e7",
+      "start": "Tue Sep 06 2020 12:10:23 GMT-0500",
+      "end": "Tue Sep 06 2020 18:13:31 GMT-0500"
+    },
+    {
+      "id": "96c004e",
+      "userId": "c8b641f",
+      "start": "Tue Sep 07 2020 12:10:23 GMT-0500",
+      "end": "Tue Sep 07 2020 15:10:23 GMT-0500"
+    },
+    {
+      "id": "2sIQtcD",
+      "userId": "c8b641f",
+      "start": "Tue Sep 04 2020 12:10:23 GMT-0500",
+      "end": "Tue Sep 04 2020 15:10:23 GMT-0500"
+    },
+    {
+      "userId": "19b83e7",
+      "start": "2020-09-10T04:51:10.508Z",
+      "end": "2020-09-10T04:51:13.371Z",
+      "id": "qvNFkER"
+    },
+    {
+      "userId": "19b83e7",
+      "start": "2020-09-10T04:51:19.872Z",
+      "end": "2020-09-10T04:52:46.500Z",
+      "id": "MlJoh5a"
+    },
+    {
+      "userId": "64097a",
+      "start": "2020-09-10T05:22:36.982Z",
+      "end": "2020-09-10T05:22:44.922Z",
+      "id": "AfxY9-w"
+    },
+    {
+      "userId": "64097a",
+      "start": "2020-09-10T05:22:50.236Z",
+      "end": "2020-09-10T05:23:05.679Z",
+      "id": "_hY74AI"
+    },
+    {
+      "userId": "19b83e7",
+      "start": "2020-09-10T05:22:56.643Z",
+      "end": "2020-09-10T05:23:00.669Z",
+      "id": "80Jhkqz"
+    },
+    {
+      "userId": "19b83e7",
+      "start": "2020-10-14T15:57:19.565Z",
+      "end": "2020-10-14T15:58:34.305Z",
+      "id": "QoMtPF5"
+    },
+    {
+      "userId": "19b83e7",
+      "start": "2020-10-14T15:58:34.840Z",
+      "end": "2020-10-14T15:58:36.722Z",
+      "id": "ZMMieMl"
+    },
+    {
+      "userId": "19b83e7",
+      "start": "2020-10-14T15:58:38.134Z",
+      "end": "2020-10-14T15:58:39.293Z",
+      "id": "a6qYA8V"
+    },
+    {
+      "userId": "19b83e7",
+      "start": "2020-10-15T04:16:21.861Z",
+      "end": "2020-10-15T04:16:33.078Z",
+      "id": "gDSNitH"
+    },
+    {
+      "userId": "19b83e7",
+      "start": "2020-10-15T04:58:03.305Z",
+      "end": "2020-10-15T04:58:05.008Z",
+      "id": "qXNtk0l"
+    },
+    {
+      "userId": "c8b641f",
+      "start": "2020-10-15T14:52:50.769Z",
+      "end": "2020-10-15T14:52:52.133Z",
+      "id": "DIxe_nV"
+    },
+    {
+      "userId": "19b83e7",
+      "start": "2020-10-15T15:12:43.524Z",
+      "end": "2020-10-15T15:12:49.931Z",
+      "id": "Iknyjv2"
+    },
+    {
+      "userId": "19b83e7",
+      "start": "2020-10-16T18:21:33.860Z",
+      "end": "2020-10-16T18:21:39.206Z",
+      "id": "fTRCcZl"
+    },
+    {
+      "userId": "19b83e7",
+      "start": "2020-10-18T19:26:25.561Z",
+      "end": "2020-10-18T19:26:29.431Z",
+      "id": "49stpAu"
+    },
+    {
+      "userId": "c8b641f",
+      "start": "2020-10-18T19:26:50.597Z",
+      "end": "2020-10-18T19:26:52.044Z",
+      "id": "6-d6VB9"
+    },
+    {
+      "userId": "c8b641f",
+      "start": "2020-10-18T19:28:00.951Z",
+      "end": "2020-10-18T19:28:03.422Z",
+      "id": "GEF1Bko"
+    },
+    {
+      "userId": "c8b641f",
+      "start": "2020-10-18T19:29:09.256Z",
+      "end": "2020-10-18T19:29:16.434Z",
+      "id": "DJEQu7H"
+    },
+    {
+      "userId": "19b83e7",
+      "start": "2020-10-18T19:29:23.567Z",
+      "end": "2020-10-18T19:29:24.888Z",
+      "id": "Po3tZRq"
+    },
+    {
+      "userId": "19b83e7",
+      "start": "2020-10-18T19:30:03.571Z",
+      "end": "2020-10-19T14:35:48.772Z",
+      "id": "wWtvJAH"
+    },
+    {
+      "userId": "64097a",
+      "start": "2020-10-18T19:31:26.397Z",
+      "end": "2020-10-18T19:32:40.362Z",
+      "id": "wQMoo3B"
+    },
+    {
+      "userId": "64097a",
+      "start": "2020-10-18T19:32:41.852Z",
+      "id": "fI-y8pM"
+    },
+    {
+      "userId": "19b83e7",
+      "start": "2020-10-19T14:35:51.090Z",
+      "end": "2020-10-20T17:16:12.300Z",
+      "id": "T52B2zI"
+    },
+    {
+      "userId": "19b83e7",
+      "start": "2020-10-20T17:16:13.598Z",
+      "end": "2020-10-20T17:19:23.172Z",
+      "id": "xYOsT5h"
+    },
+    {
+      "userId": "19b83e7",
+      "start": "2020-10-20T17:19:24.596Z",
+      "end": "2020-10-20T17:19:26.422Z",
+      "id": "wBgVU5A"
+    },
+    {
+      "userId": "19b83e7",
+      "start": "2020-10-20T18:07:16.269Z",
+      "end": "2020-10-20T18:07:24.982Z",
+      "id": "DMv1UGV"
+    },
+    {
+      "userId": "19b83e7",
+      "start": "2020-10-20T18:13:41.705Z",
+      "end": "2020-10-20T18:17:05.477Z",
+      "id": "AYJiKo5"
+    },
+    {
+      "userId": "19b83e7",
+      "start": "2020-10-20T18:17:07.597Z",
+      "end": "2020-10-20T18:18:18.396Z",
+      "id": "xgg015u"
+    },
+    {
+      "userId": "19b83e7",
+      "start": "2020-10-20T18:18:20.769Z",
+      "id": "OjkhCZP"
+    }
+  ]
+}

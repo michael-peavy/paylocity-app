@@ -1,0 +1,82 @@
+.App {
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+}
+.app__form {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  bottom:50px;
+  z-index:1;
+  background-color: rgba(151, 151, 151, 0.89);
+ width: 92%;
+ margin-left:px;
+ height: 50px;
+  border: 2px solid #ffa600;
+
+}
+
+.list {
+  display:flex;
+  justify-content: column;
+  flex-direction: column;
+}
+
+.chover:hover {
+  color: #ffa600;
+}
+
+.underline{
+  margin-top: 10px;
+  border: 2px solid;
+  width: 225%;
+  color: gray;
+
+}
+.contacts{
+  margin-Top: 10px;
+
+}
+input{
+width: 100%;
+border-radius: 100px;
+margin-right: 10px;
+text-decoration: none;
+}
+.message {
+  padding: 10px;
+  margin: 10px;
+  width: fit-content;
+  margin-left: 10px;
+}
+.btn {
+  border-radius: 200px;
+  margin-top:px;
+  border: none;
+  height: 50px;
+}
+.message__user {
+  margin-left: auto;
+  color: white;
+  text-align: left  !important;
+
+}
+
+.message__userCard{
+  background-color:#ffa600 !important;
+  margin-left: 390px;
+  
+
+}
+
+.message__guestCard{
+  background-color: rgb(255, 255, 255) !important;
+  margin-right: 300px;
+  
+
+
+}

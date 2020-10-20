@@ -1,0 +1,164 @@
+.header {
+  display: 'flex';
+  padding: 15px 20px;
+  justify-content: space-between;
+  position: sticky;
+  background-color: #FFA500;
+  z-index:100;
+  top:0;
+  box-shadow: 0px 5px 8px -9px rgba(0,0,0,1.75);
+
+
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;    
+}
+.header__left{
+  display: flex;
+  justify-content: space-evenly;
+  
+  
+
+}
+
+.width {
+  width:100%;
+}
+
+.header__input{
+  display: flex;
+  align-items: center;
+  background-color: #eff2f5;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 999px;
+  
+  
+}
+
+
+.header__left > img{
+height:40px;
+}
+
+.header__input > input{
+border: none;
+  background-color:transparent;
+ outline-width: 0;
+ 
+}
+
+.header__center {
+  display: flex;
+  flex:1;
+  justify-content: center;
+}
+
+.header__option > .MuiSvgIcon-root{
+  color: gray;
+}
+
+
+.header__option:hover > .MuiSvgIcon-root{
+  color: #FFA500;
+}
+
+.header__option--active > .MuiSvgIcon-root{
+}
+
+
+.header__option--active {
+}
+
+.header__option{
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+
+.header__option:hover{
+border-radius: 20px;
+align-items: center;
+padding: 0 30px;
+border-bottom: none;
+
+}
+
+.header__info{
+  display: flex;
+  align-items: center;
+}
+
+.header__info > h4{
+  margin-left: 10px;
+}
+
+.header__right {
+display: flex;}
+
+
+
+
+@media (max-width:800px)  { 
+  .d-none3 {
+    display: none;
+  }
+ 
+ 
+ 
+
+ }
+ 
+ 
+ @media (min-width:320px)  { 
+  .d-none2 {
+    display: none;
+  }
+ 
+ 
+ 
+ 
+ 
+  /* smartphones, iPhone, portrait 480x320 phones */ 
+ }
+ 
+ 
+ @media (min-width:481px)  {
+ 
+ 
+   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+   }
+ 
+ 
+ @media (min-width:641px)  {
+ 
+ 
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+   }
+ 
+ 
+ @media (min-width:961px)  {
+ 
+ 
+ 
+   /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+ 
+ 
+ @media (min-width:1025px) {
+ 
+ 
+   /* big landscape tablets, laptops, and desktops */ 
+  }
+ 
+ 
+ @media (min-width:1281px) { 
+  
+ 
+  
+  
+ 
+  /* hi-res laptops and desktops */
+ }
