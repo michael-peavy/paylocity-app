@@ -19,7 +19,6 @@ const UserList = () => {
 
     return (
         <div className="user-list">
-            <p>hi</p>
             {isLoading && <LoadingIndicator />}
             <ul>
                 {users.map((user) => (

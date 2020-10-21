@@ -28,28 +28,26 @@ function App() {
 
   return (
     <div className="app">
-      <ActiveUserContext.Provider>
-        <Router>
-          {!auth.currentUser ? (
-            <Login />
-          ) : (
-            <>
-              <Header />
-              <BottomHeader />
+      <Router>
+        {!auth.currentUser ? (
+          <Login />
+        ) : (
+          <>
+            <Header />
+            <BottomHeader />
 
-              <span className="app__body">
-                <Switch>
-                  <Route exact={true} path="/" component={HomeView} />
-                  <Route exact={true} path="/clock" component={clock} />
-                  <Route exact={true} path="/contact" component={Contact} />
-                  <Route exact={true} path="/messeges" component={Messeges} />
-                  <Redirect to="/" />
-                </Switch>
-              </span>
-            </>
-          )}
-        </Router>
-      </ActiveUserContext.Provider>
+            <span className="app__body">
+              <Switch>
+                <Route exact={true} path="/" component={HomeView} />
+                <Route exact={true} path="/clock" component={clock} />
+                <Route exact={true} path="/contact" component={Contact} />
+                <Route exact={true} path="/messeges" component={Messeges} />
+                <Redirect to="/" />
+              </Switch>
+            </span>
+          </>
+        )}
+      </Router>
     </div>
   );
 }
