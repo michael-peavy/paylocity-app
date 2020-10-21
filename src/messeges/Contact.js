@@ -1,14 +1,7 @@
 import React from "react";
 import "./messeges.css";
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  withRouter,
-  Redirect,
-  Link,
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const contacts = [
   {
@@ -16,7 +9,6 @@ const contacts = [
     phone: "+921 9922938",
     email: "peavy20@gmail.com",
   },
-
   {
     name: "Michael",
     phone: "+921 9922938",
@@ -83,32 +75,32 @@ function Contact() {
 
         <div className="underline"></div>
 
-        <div className='chover'>
-        <Link to="/messeges">
-          <h2>Michael Peavy</h2>
-          <p>phone:'+921 9922938',</p>
-          <p> email: 'peavy20@gmail.com'</p>
-        </Link>
+        <div className="chover">
+          <Link to="/messeges">
+            <h2>Michael Peavy</h2>
+            <p>phone:'+921 9922938',</p>
+            <p> email: 'peavy20@gmail.com'</p>
+          </Link>
         </div>
 
         <div className="underline"></div>
 
-        <div className='chover'>
-        <Link to="/messeges">
-          <h2>Michael Peavy</h2>
-          <p>phone:'+921 9922938',</p>
-          <p> email: 'peavy20@gmail.com'</p>
-        </Link>
+        <div className="chover">
+          <Link to="/messeges">
+            <h2>Michael Peavy</h2>
+            <p>phone:'+921 9922938',</p>
+            <p> email: 'peavy20@gmail.com'</p>
+          </Link>
         </div>
 
         <div className="underline"></div>
 
-        <div className='chover'>
-        <Link to="/messeges">
-          <h2>Michael Peavy</h2>
-          <p>phone:'+921 9922938',</p>
-          <p> email: 'peavy20@gmail.com'</p>
-        </Link>
+        <div className="chover">
+          <Link to="/messeges">
+            <h2>Michael Peavy</h2>
+            <p>phone:'+921 9922938',</p>
+            <p> email: 'peavy20@gmail.com'</p>
+          </Link>
         </div>
 
         <div className="underline"></div>

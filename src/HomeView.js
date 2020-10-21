@@ -6,9 +6,9 @@ import Widget from "./Widget";
 function HomeView() {
   return (
     <>
-        <Sidebar />
-        <Feed />
-        <Widget />
+      <Sidebar />
+      <Feed />
+      <Widget />
     </>
   );
 }
