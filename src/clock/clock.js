@@ -1,57 +1,30 @@
-import React, { useEffect } from 'react';
-import UserList from './UserList';
-import UserDetail from './UserDetail';
-import { Router, Link, navigate } from '@reach/router';
-import { getActiveUser, login, logout } from './ApiService';
-import Login from './Login';
-import ActiveUserContext from './ActiveUserContext';
-import './style.css'
+import React from "react";
+import UserList from "./UserList";
+import UserDetail from "./UserDetail";
+import { Link, Switch, Route } from "react-router-dom";
+import "./style.css";
 
+const Clock = () => {
+  return (
+    <div>
+      <Link to="/clock">
+        <div className="container2">
+          <div className="container">
+            <h1 className="hover">Punch Log</h1>
+            <p>Lvl.9</p>
+            <p style={{color:''}}>490xp</p>
+          </div>
+        </div>
+      </Link>
 
-window.login = login;
-window.logout = logout;
-window.getActiveUser = getActiveUser;
-
-const clock = () => {
-
-
-    const checkForActiveUser = () => {
-
-    };
-
-    const handleLogout = () => {
-
-    };
-
-    checkForActiveUser();
-
-    return (
-            <div>
-                    <Link to='/home'  onClick={''}>
-
-                      <div className='container2'>
-                      <div className='container'>
-                        <h1 className='hover'>Punch Log</h1>
-                        <p >Lvl.9</p>
-                        </div>
-                        </div>
-                    </Link>
-
-
-
-
-                <div className="app-content">
-                    <Router>
-
-                            <>
-                                <UserList path="/home" />
-                                <UserDetail path="/user/:id" />
-                            </>
-
-                    </Router>
-                </div>
-            </div>
-    );
+      <div className="app-content">
+        <Switch>
+          <Route exact={true} path="/clock" component={UserList} />
+          <Route exact={true} path="/clock/user/:id" component={UserDetail} />
+        </Switch>
+      </div>
+    </div>
+  );
 };
 
-export default clock;
+export default Clock;

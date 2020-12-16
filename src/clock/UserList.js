@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { UserListItem } from './UserListItem';
-import { getUsers } from './ApiService';
-import LoadingIndicator from './LoadingIndicator';
+import React, { useEffect, useState } from "react";
+import { UserListItem } from "./UserListItem";
+import { getUsers } from "./ApiService";
+import LoadingIndicator from "./LoadingIndicator";
 
 const UserList = () => {
-    const [users, updateUsers] = useState([]);
+
+  const [users, updateUsers] = useState([]);
     const [isLoading, updateLoading] = useState(false);
 
     useEffect(() => {
@@ -19,7 +20,6 @@ const UserList = () => {
 
     return (
         <div className="user-list">
-            {isLoading && <LoadingIndicator />}
             <ul>
                 {users.map((user) => (
                     <UserListItem key={user.id} {...user} />
@@ -29,35 +29,16 @@ const UserList = () => {
                 <br></br>
                 <br></br>
                 <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
+             
 
-               <br></br>
-                <br></br>
-                <br></br>
-
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-               <br></br>
+             
 
 
             </ul>
         </div>
-    );
+    
+ 
+  );
 };
 
 export default UserList;

@@ -3,104 +3,70 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
+@media (min-width: 375px) {
 
-@media (min-width:320px)  { 
+
+  /* smartphones, iPhone, portrait 480x320 phones */
+}
+
+@media (min-width: 481px) {
   .feed {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 0px;
-    
+    margin-left: 10px;
   }
-  
- 
 
- 
-
-  /* smartphones, iPhone, portrait 480x320 phones */ 
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
 
-
-@media (min-width:481px)  {
-  .feed {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0px;
-  
-    
-  }
-  
-
-   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-   }
-
-
-@media (min-width:641px)  {
+@media (min-width: 641px) {
   .feed {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-left: 100px;
-  
-    
   }
 
- 
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-   }
+}
 
-
-@media (min-width:900px)  {
+@media (min-width: 900px) {
   .feed {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left:60px;
-  
-    
+    margin-left: 60px;
   }
 
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
 
-   /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-
-
-@media (min-width:1025px) {
+@media (min-width: 1025px) {
   .feed {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left:80px;
-  
-    
+    margin-left: 80px;
   }
 
+  /* big landscape tablets, laptops, and desktops */
+}
 
-   /* big landscape tablets, laptops, and desktops */ 
-  }
-
-
-@media (min-width:1281px) { 
+@media (min-width: 1281px) {
   .feed {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left:140px;
-  
-    
+    margin-left: 140px;
   }
-
-  
-  
 
   /* hi-res laptops and desktops */
 }

@@ -1,14 +1,9 @@
 import React from "react";
 import "./messeges.css";
+import { Avatar } from "@material-ui/core";
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  withRouter,
-  Redirect,
-  Link,
-} from "react-router-dom";
+
+import { Link } from "react-router-dom";
 
 const contacts = [
   {
@@ -16,7 +11,6 @@ const contacts = [
     phone: "+921 9922938",
     email: "peavy20@gmail.com",
   },
-
   {
     name: "Michael",
     phone: "+921 9922938",
@@ -29,89 +23,141 @@ const contacts = [
   },
 ];
 
-function Contact() {
+function Contact(profilePic) {
   return (
-    <div className="contacts">
+    <div className="">
       <ul>
-        <div className="chover">
+       <br></br>
+       <h1 style={{marginBottom:'45px', marginRight:'35px', marginTop:'15px'}}>Contact List</h1>
+
+
+<div className="contacts">
+
           <Link to="/messeges">
-            <h2>Michael Peavy</h2>
-            <p>phone:'+921 9922938',</p>
-            <p> email: 'peavy20@gmail.com'</p>
+          <div className='display' >
+          <div className="chover">
+
+            <h2 style={{}} >UrBeLaunch-Team</h2>
+            </div>
+
+            <Avatar style={{marginLeft:'18px', marginRight:'10px'}} />
+            </div> 
+
+            <p style={{marginLeft:'38px'}} >phone:'+921 992-2938',</p>
+            <p style={{marginLeft:'38px'}}> email: 'peavy20@gmail.com'</p>
           </Link>
-        </div>
 
-        <div className="underline"></div>
 
-        <div className="chover">
+          
+          <div className="underline"></div>
+
           <Link to="/messeges">
-            <h2>Michael Peavy</h2>
-            <p>phone:'+921 9922938',</p>
-            <p> email: 'peavy20@gmail.com'</p>
+          <div className='display' >
+          <div className="chover">
+
+            <h2 style={{}} >Michael Peavy</h2>
+            </div>
+
+            <Avatar style={{}} />
+            </div> 
+
+            <p style={{marginLeft:'38px'}} >phone:'+921 992-2938',</p>
+            <p style={{marginLeft:'38px'}}> email: 'peavy20@gmail.com'</p>
           </Link>
-        </div>
 
-        <div className="underline"></div>
 
-        <div className="chover">
+          
+          <div className="underline"></div>
+          
+
+          
+
+
           <Link to="/messeges">
-            <h2>Michael Peavy</h2>
-            <p>phone:'+921 9922938',</p>
-            <p> email: 'peavy20@gmail.com'</p>
+          <div className='display' >
+          <div className="chover">
+
+            <h2 style={{}} >Kongsee Yang</h2>
+            </div>
+
+            <Avatar style={{}} />
+            </div> 
+
+            <p style={{marginLeft:'38px'}} >phone:'+921 992-2938',</p>
+            <p style={{marginLeft:'38px'}}> email: 'peavy20@gmail.com'</p>
           </Link>
-        </div>
+          <div className="underline"></div>
 
-        <div className="underline"></div>
+          
 
-        <div className="chover">
+
           <Link to="/messeges">
-            <h2>Michael Peavy</h2>
-            <p>phone:'+921 9922938',</p>
-            <p> email: 'peavy20@gmail.com'</p>
+          <div className='display' >
+          <div className="chover">
+
+            <h2 style={{}} >Javier Rodriguez</h2>
+            </div>
+
+            <Avatar style={{marginLeft:'10px', marginRight:'10px'}} />
+            </div> 
+
+            <p style={{marginLeft:'38px'}} >phone:'+921 992-2938',</p>
+            <p style={{marginLeft:'38px'}}> email: 'peavy20@gmail.com'</p>
           </Link>
-        </div>
+          <div className="underline"></div>
 
-        <div className="underline"></div>
+          
 
-        <div className="chover">
+
           <Link to="/messeges">
-            <h2>Michael Peavy</h2>
-            <p>phone:'+921 9922938',</p>
-            <p> email: 'peavy20@gmail.com'</p>
+          <div className='display' >
+          <div className="chover">
+
+            <h2 style={{}} >Lenna Flattley</h2>
+            </div>
+
+            <Avatar style={{}} />
+            </div> 
+
+            <p style={{marginLeft:'38px'}} >phone:'+921 992-2938',</p>
+            <p style={{marginLeft:'38px'}}> email: 'peavy20@gmail.com'</p>
           </Link>
-        </div>
+          <div className="underline"></div>
 
-        <div className="underline"></div>
+          
 
-        <div className='chover'>
-        <Link to="/messeges">
-          <h2>Michael Peavy</h2>
-          <p>phone:'+921 9922938',</p>
-          <p> email: 'peavy20@gmail.com'</p>
-        </Link>
-        </div>
 
-        <div className="underline"></div>
+          <Link to="/messeges">
+          <div className='display' >
+          <div className="chover">
 
-        <div className='chover'>
-        <Link to="/messeges">
-          <h2>Michael Peavy</h2>
-          <p>phone:'+921 9922938',</p>
-          <p> email: 'peavy20@gmail.com'</p>
-        </Link>
-        </div>
+            <h2 style={{}} >Michael Peavy</h2>
+            </div>
 
-        <div className="underline"></div>
+            <Avatar style={{}} />
+            </div> 
 
-        <div className='chover'>
-        <Link to="/messeges">
-          <h2>Michael Peavy</h2>
-          <p>phone:'+921 9922938',</p>
-          <p> email: 'peavy20@gmail.com'</p>
-        </Link>
-        </div>
+            <p style={{marginLeft:'38px'}} >phone:'+921 992-2938',</p>
+            <p style={{marginLeft:'38px'}}> email: 'peavy20@gmail.com'</p>
+          </Link>
+          <div className="underline"></div>
+          </div>
 
-        <div className="underline"></div>
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
       </ul>
     </div>
   );

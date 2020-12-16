@@ -1,0 +1,142 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  }
+
+  
+body{
+  background-color: rgb(246, 246, 217) ;
+  width: 100%;
+  background-size: cover;
+  text-align: center;
+}
+  .app__form {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    bottom:50px;
+    z-index:1;
+    background-color: gray;
+   width: 92%;
+   margin-left:100px;
+   height: 50px;
+  }
+  
+  .list {
+    display:flex;
+    justify-content: column;
+    flex-direction: column;
+  }
+  
+  .chover:hover{
+    
+  }
+  .chover:hover {
+    color: #ffa600;
+  }
+  
+  .display{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-left: 32px;
+  }
+  
+  
+  .contacts{
+    margin-Top: 10px;
+  
+  }
+
+  @media (min-width:500px)  {    
+    .c00{
+      margin-right: 0px;
+    
+    }
+  }
+
+  @media (max-width:768px)  {    
+    .c00{
+      margin-Left: 20px;
+    
+    }
+  
+
+  
+  
+    }
+  
+
+    @media (max-width:375px)  {    
+      .contacts00{
+        margin-Left: 5px;
+      
+      }
+    }
+
+    @media (max-width:320px)  {    
+      .contacts00{
+        margin-Left: 0px;
+      
+      }
+
+    }
+    
+  
+@media (min-width: 360px) {
+ 
+  .contacts00{
+    margin-Left: 5px;
+  
+  }
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+
+@media (min-width: 375px) {
+ 
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+
+
+@media (min-width: 414px) {
+ 
+
+  .contacts00{
+    margin-Left: 1010px;
+  
+  }
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+
+
+@media (min-width: 411px) {
+ 
+
+  .contacts00{
+    margin-Left: 9px;
+  
+  }
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
+
+ 
