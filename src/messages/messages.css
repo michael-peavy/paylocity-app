@@ -4,6 +4,7 @@ flex-direction: column;
 justify-content: center;
 text-align: center;
 }
+
 .app__form {
   padding: 20px;
   display: flex;
@@ -40,7 +41,7 @@ text-align: center;
   border: 2px solid;
   width: 145%;
   color: gray;
-  margin-left: 19px;
+  margin-left: px;
   border-radius: 1000px;
 
 
@@ -97,7 +98,7 @@ text-decoration: none;
     border: 2px solid;
     width: 133%;
     color: gray;
-    margin-left: 19px;
+    margin-left: px;
     border-radius: 1000px;
   }
 
@@ -130,7 +131,7 @@ text-decoration: none;
     border: 2px solid;
     width: 136%;
     color: gray;
-    margin-left: 19px;
+    margin-left: px;
     border-radius: 1000px;
   
   
@@ -144,7 +145,7 @@ text-decoration: none;
       border: 2px solid;
       width: 150%;
       color: gray;
-      margin-left: 19px;
+      margin-left: px;
       border-radius: 1000px;
     
     }
@@ -158,11 +159,14 @@ text-decoration: none;
       border: 2px solid;
       width: 152%;
       color: gray;
-      margin-left: 19px;
+      margin-left: px;
       border-radius: 1000px;
     
     }
     }
+
+
+   
   
 
 
@@ -176,3 +180,30 @@ text-decoration: none;
 
   
   }
+
+
+  @media (min-width: 1878px) {
+    .contacts{
+      margin-left: 660px;
+    }
+
+    .app__form{
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      position: fixed;
+      margin-bottom:0px;
+      background-color: gray;
+     height: 0px;
+    }
+
+    .message__userCard{
+      background-color:#ffa600 !important;
+      margin-left: 1830px;
+      
+    
+    }
+      }
+
+  

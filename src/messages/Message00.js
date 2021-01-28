@@ -1,6 +1,6 @@
 import { Card, CardContent, Typography } from "@material-ui/core";
 import React from "react";
-import "./messeges.css";
+import "./messages.css";
 
 const Messages00 = ({ message, username }) => {
   const isUser = username === message.username;

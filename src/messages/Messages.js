@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./messeges.css";
+import "./messages.css";
 import Message00 from "./Message00";
 
 const Messeges = () => {

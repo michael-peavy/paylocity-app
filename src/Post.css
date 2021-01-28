@@ -76,22 +76,14 @@ body{
 @media (max-width:1834px)  { 
   .post {
     width: 100%;
-    margin-top: 15px;
-    border-radius: 15px;
-    background-color: #f3f1ed;
-    box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
-    margin-left: 2px;
+    
   }
 }
 
 @media (max-width:360px)  {
   .post {
     width: 80%;
-    margin-right: 20px;
-    margin-top: 15px;
-    border-radius: 15px;
-    background-color: #f3f1ed;
-    box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+   
   }
 
   .d-none8{
@@ -104,10 +96,7 @@ body{
 @media (max-width:411px)  {
   .post {
     width: 80%;
-    margin-top: 15px;
-    border-radius: 15px;
-    background-color: #f3f1ed;
-    box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+   
   }
 
   .d-none8{
@@ -118,11 +107,7 @@ body{
 @media (max-width:414px)  {
   .post {
     width: 80%;
-    margin-top: 15px;
-    border-radius: 15px;
-    background-color: #f3f1ed;
-    box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
-    margin-left: 2px;
+   
   }
 
   .d-none8{
@@ -133,11 +118,7 @@ body{
  @media (max-width:375px)  {
   .post {
     width: 80%;
-    margin-top: 15px;
-    border-radius: 15px;
-    background-color: #f3f1ed;
-    box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
-    margin-left: 20px;
+   
   }
 
   .d-none8{
@@ -150,11 +131,7 @@ body{
  @media (max-width:768px)  {
   .post {
     width: 80%;
-    margin-top: 15px;
-    border-radius: 15px;
-    background-color: #f3f1ed;
-    box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
-    margin-left: 1px;
+   
   }
 
   .d-none8{

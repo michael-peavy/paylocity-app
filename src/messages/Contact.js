@@ -1,5 +1,5 @@
 import React from "react";
-import "./messeges.css";
+import "./messages.css";
 import { Avatar } from "@material-ui/core";
 
 

@@ -41,10 +41,7 @@ function Post({ profilePic, image, username, timestamp, message }) {
                     <p>Share</p>
                 </div>
 
-                <div className="post_option, d-none8">
-                    <AccountCircleIcon />
-                    <ExpandMoreOutlined />
-                </div>
+                
 
             </div>
 

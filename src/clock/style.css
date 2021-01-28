@@ -1,5 +1,3 @@
-
-
 .header000 {
   color: gray;
   
@@ -197,7 +195,9 @@ p {
 
 
 
-
+.list-00{
+  
+}
  
 
 
@@ -243,15 +243,33 @@ p {
   }
  }
   
+
+ @media (min-width: 1878px) {
+.list00{
+  margin-Left:755px;
+
+}
+
+ }
+
+ 
+ @media (min-width: 1878px) {
+  .list00{
+    margin-Left:740px;
   
- 
+  }
 
+  .user-detail {
+   margin-left: 560px;
+   width: 1000px;
+  }
 
+  .button{
+    margin-left: 300px;
+
+  }
   
- 
+   }
+   
+  
 
-
-
- 
-
- 

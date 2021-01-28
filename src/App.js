@@ -10,11 +10,11 @@ import Login from "./Login.js";
 import clock from "./clock/clock";
 import PayCheck from './paycheck/PayCheck'
 import HomeView from "./HomeView";
-import Contact from './messeges/Contact'
+import Contact from './messages/Contact'
 import { auth, provider } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import { actionTypes } from "./reducer";
-import Messeges from './messeges/Messeges'
+import Messeges from './messages/Messages'
 import Hr from './hr/Hr'
 
 import {
@@ -50,7 +50,7 @@ function App() {
                 <Route exact={true} path="/" component={HomeView} />
                 <Route path="/clock" component={clock} />
                 <Route path="/contact" component={Contact} />
-                <Route path="/messeges" component={Messeges} />
+                <Route path="/messages" component={Messeges} />
                 <Route path="/paycheck" component={PayCheck} />
                 <Route path="/menu" component={Hr} />
 

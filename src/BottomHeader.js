@@ -29,23 +29,21 @@ class BottomHeader extends React.Component {
                 </div>
               </Link>
 
-              <Link to="/contact">
+              
                 <div className="header__option1">
                   <MessageIcon fontSize="large" />
                 </div>
-              </Link>
+              
 
-             <Link to='paycheck'>
+             
               <div className="header__option1">
                 <DateRangeIcon fontSize="large" />
               </div>
-              </Link>
-
-              <Link to='menu'>
+                       
               <div className="header__option1">
                 <ReorderIcon fontSize="large" />
               </div>
-              </Link>
+              
             </div>
           </div>
         </ul>

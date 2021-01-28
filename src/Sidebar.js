@@ -17,12 +17,28 @@ function Sidebar() {
       <div className="d-none4">
         <SidebarRow src={user.photoURL} title={user.displayName} />
         <SidebarRow Icon={LocalHospitalIcon} title="Emergency Support" />
+       
         <Link to="/clock">
           <SidebarRow Icon={EmojiFlagsIcon} title="Punch in" />
         </Link>
-        <SidebarRow Icon={PeopleIcon} title="Contacts" />
-        <SidebarRow Icon={ChatIcon} title="Messeges" />
+
+          
+        <a href='https://tok.mikepeavy.vercel.app/'>
+
         <SidebarRow Icon={VideoLibraryIcon} title="Videos" />
+        </a>
+
+         <Link to=''>
+        <SidebarRow Icon={PeopleIcon} title="Contacts" />
+        </Link>
+
+         <Link to=''>
+        <SidebarRow Icon={ChatIcon} title="Messages" />
+        </Link>
+         
+    
+
+
         <SidebarRow Icon={ExpandMoreIcon} title="More" />
       </div>
     </div>
